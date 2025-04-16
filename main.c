@@ -11,7 +11,7 @@ int main (){
 
     for (int a=0; a < 5; a++)
         {
-        printf("Enter name and 13 test results for student %d:\n", a+1);
+       
         scanf("%50s", name[a]);
         
         name[a][0] =toupper(name[a][0]);
@@ -45,7 +45,7 @@ int main (){
     }
 printf("\n%s\n", name[max_index]);
 
-printf("\n");
+
 for (int a=0; a<5;a++)
 {
 if(averages[a] < total_average)
