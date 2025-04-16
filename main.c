@@ -4,7 +4,7 @@
 #include <string.h>
 
 int main (){
-    char name[5][50];
+    char name[5][11];
     int results[5][13];
     float averages[5];
     float total_average = 0;
@@ -18,7 +18,7 @@ int main (){
 
         for(int b = 0; b < 13;b++)
         {
-            scanf("%d ", &results[a][b]);
+            scanf("%d", &results[a][b]);
 
         }
             while (getchar() !='\n');
