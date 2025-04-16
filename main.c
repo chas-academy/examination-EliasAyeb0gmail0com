@@ -12,7 +12,7 @@ int main (){
     for (int a=0; a < 5; a++)
         {
        
-        scanf("%50s", name[a]);
+        scanf("%10s", name[a]);
         
         name[a][0] =toupper(name[a][0]);
 
@@ -21,8 +21,6 @@ int main (){
             scanf("%d", &results[a][b]);
 
         }
-            while (getchar() !='\n');
-
             int sum = 0;
             for (int b = 0; b<13; b++)
             {
@@ -35,7 +33,7 @@ int main (){
     total_average /=5;
 
     int max_index = 0;
-    for(int a=0; a<5;a++)
+    for(int a=1; a<5;a++)
     {
         if(averages[a]>averages[max_index])
         {
@@ -43,7 +41,7 @@ int main (){
         }
 
     }
-printf("\n%s\n", name[max_index]);
+printf("%s\n", name[max_index]);
 
 
 for (int a=0; a<5;a++)
